@@ -1,0 +1,21 @@
+.skillContainer {
+    border: 1px solid;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skillTitle {
+    background-color: red;
+}
+.skillIcon{
+    background-color: lightgrey;
+    width: 50px;
+    height: 50px;
+}
+.skillInfo{
+    background-color: whitesmoke;
+    text-align: center;
+}

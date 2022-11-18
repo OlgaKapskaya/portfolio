@@ -1,0 +1,36 @@
+@media screen and (max-width: 629px){
+    .skills{
+        justify-content: center;
+    }
+    .skillsContainer{
+        height: max-content;
+    }
+}
+@media screen and (min-width: 630px){
+    .skills{
+        justify-content: space-between;
+    }
+    .skillsContainer{
+        height: 100vh;
+    }
+}
+.skillsContainer{
+    background-color: lightgrey;
+}
+.skillBlock{
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.skills{
+    border: 1px solid;
+    background-color: lightpink;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.title{
+    background-color: cornflowerblue;
+}

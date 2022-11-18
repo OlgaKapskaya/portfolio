@@ -1,0 +1,37 @@
+@media screen and (max-width: 629px) {
+    .projectContainer {
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (min-width: 630px) {
+    .projectContainer {
+        width: 250px;
+
+    }
+
+}
+
+.projectContainer {
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.projectPreview {
+    width: 100%;
+    height: 150px;
+    background-color: lightskyblue;
+}
+
+.projectTitle {
+    background-color: whitesmoke;
+}
+
+.projectDescription {
+    background-color: red;
+    margin-top: 0;
+}
