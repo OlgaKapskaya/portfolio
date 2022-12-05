@@ -1,37 +1,106 @@
-@media screen and (max-width: 629px) {
+@media screen and (max-width: 833px) {
     .projectContainer {
         width: 100%;
-
     }
-
 }
 
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 834px) {
     .projectContainer {
         width: 250px;
-
     }
-
 }
 
 .projectContainer {
-    border: 1px solid;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+.portfolioProject{
+    min-height: 400px;
+    width: 100%;
+    border-radius: 5px;
+    z-index: 4;
+    background-position: center;
 }
 
 .projectPreview {
+    transition: transform 0.28s ease;
+    z-index: 3;
+    height: 100%;
     width: 100%;
-    height: 150px;
-    background-color: lightskyblue;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px 30px 10px;
+}
+.projectPreview:hover{
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 32%, rgba(249,0,77,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 32%, rgba(249,0,77,1) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 32%, rgba(249,0,77,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#f9004d",GradientType=1);
+
+
+    opacity: 0.95;
+    /*border-radius: 5px;*/
+
+}
+.portfolioProject:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
 }
 
+
+.linkDemo{
+    color: #fff;
+    border-color: rgba(255,255,255,.3);
+    padding: 0 23px;
+    height: 40px;
+    display: inline-block;
+    line-height: 34px;
+    border: 2px solid var(--color-border);
+    border-radius: 4px;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+
+}
+.linkDemo:hover{
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    background: 0 0;
+    cursor: pointer;
+}
 .projectTitle {
-    background-color: whitesmoke;
+    margin: 0;
+    color: #fff;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4074;
+    text-transform: capitalize;
+    word-break: break-word;
 }
 
 .projectDescription {
-    background-color: red;
-    margin-top: 0;
+    color: #c6c9d8;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.buttonLink{
+    margin-top: 35px;
+    transition: 0.7s;
 }

@@ -1,21 +1,63 @@
 .skillContainer {
-    border: 1px solid;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    background: #191919;
+    border-radius: 5px;
+    width: 450px;
+    cursor: pointer;
+    justify-content: space-between;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.skillContainer:hover{
+    background-image: -webkit-gradient(linear,left top,right top,from(#f61b10),to(#ef0963));
+    background-image: -webkit-linear-gradient(left,#f61b10,#ef0963);
+    background-image: linear-gradient(90deg,#f61b10,#ef0963);
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+.skillContainer:hover .iconContainer,.skillContainer:hover .content, .skillContainer:hover .content p{
+    color: #fff;
 }
 
-.skillTitle {
-    background-color: red;
+.service{
+    display: flex;
+    background: transparent;
+    padding: 40px;
 }
-.skillIcon{
-    background-color: lightgrey;
-    width: 50px;
-    height: 50px;
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "Poppins",sans-serif;
+    color: #fff;
+    box-sizing: border-box;
 }
-.skillInfo{
-    background-color: whitesmoke;
-    text-align: center;
+.content h3, .content p{
+    margin: 0;
+}
+.content h3{
+    margin-bottom: 19px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4074;
+    word-break: break-word;
+}
+.content p{
+    color: rgba(198,201,216,.75);
+    font-size: 16px;
+}
+
+.skillIcon {
+    width: 54px;
+    height: 54px;
+    color: var(--color-primary)
+}
+.iconContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 30px;
+    font-size: 40px;
+    color: var(--color-primary)
 }

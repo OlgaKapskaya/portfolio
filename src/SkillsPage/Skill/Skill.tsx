@@ -1,12 +1,25 @@
 import s from "./Skill.module.css";
-import React from "react";
+import React, {FC} from "react";
 
-export const Skill = () => {
+type SkillProps = {
+    logo: JSX.Element
+    title: string
+    description: string
+}
+
+export const Skill: FC<SkillProps> = ({logo, title, description}) => {
     return (
         <div className={s.skillContainer}>
-            <div className={s.skillIcon}> skill logo</div>
-            <h3 className={s.skillTitle}> Skill Title</h3>
-            <p className={s.skillInfo}> text text texte text texte text text texet </p>
+            <div className={s.service}>
+                <div className={s.iconContainer}>
+                    {logo}
+                </div>
+                <div className={s.content}>
+                    <h3> {title} </h3>
+                    <p> {description} </p>
+                </div>
+            </div>
+
         </div>
     )
 }

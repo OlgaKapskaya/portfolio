@@ -1,29 +1,21 @@
 import s from './Contact.module.css'
 import container from "../common/styles/Container.module.css";
 import React from "react";
+import {ButtonComponent} from "../common/components/Button/ButtonComponent";
+import {Title} from "../common/components/Title/Title";
 
 export const Contact = () => {
-    return(
-        <div className={s.contactContainer}>
-            <div className={container.container}>
-                <div className={s.inputForm}>
-                    <h2>I Am Available For Freelance</h2>
-                    <div className={s.form}>
-                        <input placeholder={'name'}/>
-                        <input placeholder={'email'}/>
-                        <textarea placeholder={'text'}/>
-                        <button> send </button>
-                    </div>
-
-
-                </div>
-                <div className={s.contactAddress}>
-                    <h2>Contact Address</h2>
-                    <div className={s.address}> address</div>
-                    <div className={s.email}> email</div>
-                    <div className={s.phones}> phones</div>
-                </div>
+    return (
+        <section className={s.contactContainer} id={'contactPage'}>
+            <div className={`${container.container} ${s.containerFormAndData}`}>
+                    <Title title='contact' description='I am available for freelance work. Connect with me via phone: +375(29) 592 16 01 or email: olikbuko@gmail.com'/>
+                    <form className={s.form}>
+                        <input className={s.input} placeholder='Your name' type='text'/>
+                        <input className={s.input} placeholder='Your email' type='text'/>
+                        <textarea className={s.input} placeholder={'Your message'}/>
+                        <ButtonComponent title='send message' onClick={() => {}}/>
+                    </form>
             </div>
-        </div>
+        </section>
     )
 }

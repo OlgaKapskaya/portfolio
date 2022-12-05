@@ -1,0 +1,16 @@
+.iconsContainer{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+    font-size: 2em;
+    color: #c6c9d8;
+
+}
+.icon:hover{
+    color: var(--color-primary);
+    transform: translateY(-5px);
+    transition: 0.5s;
+}

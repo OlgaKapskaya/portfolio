@@ -1,20 +1,30 @@
 import React from "react";
 import s from './Main.module.css'
 import container from '../common/styles/Container.module.css'
+import {ContactButtonGroup} from "../ContactButtonGroup/ContactButtonGroup";
+import mainPhoto from '../accets/image/photo_to_main.jpg'
+
 
 export const Main = () => {
+
     return (
-        <div className={s.mainContainer}>
+        <section className={s.mainContainer} id={'mainPage'}>
+
             <div className={container.container}>
                 <div className={s.about}>
-                    <span>Hi!</span>
-                    <h1>My name is OLGA KAPSKAYA</h1>
-                    <p>Frontend Developer</p>
+                    <span>HELLO, MY NAME IS</span>
+                    <h1>OLGA KAPSKAYA</h1>
+                    <span>FRONT-END DEVELOPER BASED IN #MINSK</span>
+                    <div className={s.buttonGroup}>
+                        <ContactButtonGroup/>
+
+                    </div>
+
                 </div>
                 <div className={s.photo}>
-                    PHOTO
+                    <img src={mainPhoto} className={s.photoImg}/>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

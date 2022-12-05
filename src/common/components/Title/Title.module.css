@@ -1,0 +1,32 @@
+.title{
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+    font-size: var(--h3);
+    line-height: 1.4074;
+    color: var(--color-primary);
+    margin: 10px 0 20px;
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+}
+.title h2{
+    margin: 0;
+}
+.title p{
+    color: rgba(198,201,216,.75);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+
+}
+.title::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background: var(--color-primary);
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+
+}
