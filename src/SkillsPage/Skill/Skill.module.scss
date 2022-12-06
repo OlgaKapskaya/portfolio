@@ -1,10 +1,7 @@
-$color_1: #fff;
-$color_2: rgba(198,201,216,.75);
-$color_3: var(--color-primary);
-$font-family_1: "Poppins",sans-serif;
+@import 'src/accets/style/sass/variables';
 
 .skillContainer {
-    background: #191919;
+    background: $color-bg-secondary;
     border-radius: 5px;
     width: 450px;
     cursor: pointer;
@@ -18,12 +15,12 @@ $font-family_1: "Poppins",sans-serif;
         transform: translateY(-5px);
         transition: 0.3s;
         .iconContainer {
-            color: $color_1;
+            color: $color-secondary;
         }
         .content {
-            color: $color_1;
+            color: $color-secondary;
             p {
-                color: $color_1;
+                color: $color-secondary;
             }
         }
     }
@@ -38,8 +35,8 @@ $font-family_1: "Poppins",sans-serif;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-family: $font-family_1;
-    color: $color_1;
+    font-family: $font-family;
+    color: $color-secondary;
     box-sizing: border-box;
     h3 {
         margin: 0 0 19px 0;
@@ -50,14 +47,14 @@ $font-family_1: "Poppins",sans-serif;
     }
     p {
         margin: 0;
-        color: $color_2;
+        color: $font-color-secondary;
         font-size: 16px;
     }
 }
 .skillIcon {
     width: 54px;
     height: 54px;
-    color: $color_3;
+    color: $color-primary;
 }
 .iconContainer {
     display: flex;
@@ -65,5 +62,5 @@ $font-family_1: "Poppins",sans-serif;
     justify-content: flex-start;
     margin-right: 30px;
     font-size: 40px;
-    color: $color_3;
+    color: $color-primary;
 }

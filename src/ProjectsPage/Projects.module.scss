@@ -1,3 +1,4 @@
+@import 'src/accets/style/sass/variables';
 @media screen and (max-width: 629px){
     .projects{
         justify-content: center;
@@ -10,7 +11,7 @@
     }
 }
 .projectsContainer{
-    background-color: #101010;
+    background-color: $color-bg-primary;
     min-height: 100vh;
 }
 .projectsBlock{
@@ -20,7 +21,7 @@
     flex-wrap: nowrap;
 }
 .title{
-    background-color: cornflowerblue;
+    background-color: transparent;
 }
 .projects{
     width: 100%;
