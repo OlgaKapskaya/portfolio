@@ -1,5 +1,5 @@
 import {FC} from "react";
-import s from './ButtonComponent.module.css'
+import s from './ButtonComponent.module.scss'
 
 type ButtonComponentProps = {
     title: string

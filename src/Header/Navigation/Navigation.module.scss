@@ -1,0 +1,43 @@
+$color_1: #fff;
+$color_2: var(--color-primary);
+
+.nav {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    a {
+        color: $color_1;
+        text-transform: capitalize;
+        transition: all 0.3s cubic-bezier(.645,.045,.355,1);
+        position: relative;
+        padding: 20px 0;
+        &:active {
+            color: $color_2;
+            &::before {
+                width: 100%;
+            }
+        }
+        &:hover {
+            color: $color_2;
+            &::before {
+                width: 100%;
+            }
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--color-primary);
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            bottom: 0;
+        }
+    }
+}
+

@@ -1,44 +1,42 @@
-@media screen and (max-width: 966px){
-    h1{
+
+@media screen and (max-width: 966px) {
+    h1 {
         font-size: 36px;
         line-height: 49px;
     }
-    .photo{
+    .photo {
         height: 400px;
     }
-
 }
-@media screen and (min-width: 967px){
-    h1{
+@media screen and (min-width: 967px) {
+    h1 {
         font-size: 90px;
         line-height: 112px;
     }
-
 }
-.mainContainer{
+.mainContainer {
     min-height: 100vh;
 }
-
-.about{
+.about {
     display: flex;
     flex-direction: column;
     font-size: 16px;
     width: 500px;
 }
-.photo{
+.photo {
     width: 350px;
     height: 500px;
     margin: 10px;
 }
-.photoImg{
+.photoImg {
     width: 350px;
     height: 500px;
     object-fit: cover;
 }
-.buttonGroup{
+.buttonGroup {
     margin-top: 15px;
 }
-h1{
+h1 {
     margin: 0;
     text-transform: uppercase;
     background-image: linear-gradient(145deg,#f81f01,#ee076e);

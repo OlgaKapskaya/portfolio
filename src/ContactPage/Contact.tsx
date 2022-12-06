@@ -1,5 +1,5 @@
-import s from './Contact.module.css'
-import container from "../common/styles/Container.module.css";
+import s from './Contact.module.scss'
+import container from "../common/styles/Container.module.scss";
 import React from "react";
 import {ButtonComponent} from "../common/components/Button/ButtonComponent";
 import {Title} from "../common/components/Title/Title";

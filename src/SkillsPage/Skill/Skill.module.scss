@@ -1,0 +1,69 @@
+$color_1: #fff;
+$color_2: rgba(198,201,216,.75);
+$color_3: var(--color-primary);
+$font-family_1: "Poppins",sans-serif;
+
+.skillContainer {
+    background: #191919;
+    border-radius: 5px;
+    width: 450px;
+    cursor: pointer;
+    justify-content: space-between;
+    margin: 10px;
+    box-sizing: border-box;
+    &:hover {
+        background-image: -webkit-gradient(linear,left top,right top,from(#f61b10),to(#ef0963));
+        background-image: -webkit-linear-gradient(left,#f61b10,#ef0963);
+        background-image: linear-gradient(90deg,#f61b10,#ef0963);
+        transform: translateY(-5px);
+        transition: 0.3s;
+        .iconContainer {
+            color: $color_1;
+        }
+        .content {
+            color: $color_1;
+            p {
+                color: $color_1;
+            }
+        }
+    }
+}
+.service {
+    display: flex;
+    background: transparent;
+    padding: 40px;
+}
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: $font-family_1;
+    color: $color_1;
+    box-sizing: border-box;
+    h3 {
+        margin: 0 0 19px 0;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.4074;
+        word-break: break-word;
+    }
+    p {
+        margin: 0;
+        color: $color_2;
+        font-size: 16px;
+    }
+}
+.skillIcon {
+    width: 54px;
+    height: 54px;
+    color: $color_3;
+}
+.iconContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 30px;
+    font-size: 40px;
+    color: $color_3;
+}

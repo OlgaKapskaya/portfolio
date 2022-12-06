@@ -1,0 +1,30 @@
+$color_1: var(--color-primary);
+$color_2: var(--color-primary-light);
+$font-family_1: "Poppins",sans-serif;
+$background-color_1: transparent;
+$background-color_2: var(--color-primary);
+
+.button {
+    border: 2px solid var(--color-primary);
+    color: $color_1;
+    background-color: $background-color_1;
+    cursor: pointer;
+    padding: 11px 15px;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 13px;
+    font-family: $font-family_1;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 500;
+    transition: .3s;
+    min-width: 128px;
+    &:hover {
+        border: 2px solid var(--color-primary);
+        background-color: $background-color_2;
+        color: $color_2;
+        transform: translateY(-5px);
+        transition: 0.3s;
+    }
+}

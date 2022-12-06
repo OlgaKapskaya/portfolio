@@ -1,20 +1,21 @@
-@media screen and (max-width: 629px){
-    .skills{
+$background-color_1: #101010;
+
+@media screen and (max-width: 629px) {
+    .skills {
         justify-content: center;
     }
 }
-
-.skillsContainer{
-    background-color: #101010;
+.skillsContainer {
+    background-color: $background-color_1;
     min-height: 100vh;
 }
-.skillBlock{
+.skillBlock {
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: nowrap;
 }
-.skills{
+.skills {
     width: 100%;
     justify-content: space-evenly;
     display: flex;

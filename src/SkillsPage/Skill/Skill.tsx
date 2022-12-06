@@ -1,4 +1,4 @@
-import s from "./Skill.module.css";
+import s from "./Skill.module.scss";
 import React, {FC} from "react";
 
 type SkillProps = {

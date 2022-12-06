@@ -1,6 +1,6 @@
 import React from "react";
-import s from './Main.module.css'
-import container from '../common/styles/Container.module.css'
+import s from './Main.module.scss'
+import container from '../common/styles/Container.module.scss'
 import {ContactButtonGroup} from "../ContactButtonGroup/ContactButtonGroup";
 import mainPhoto from '../accets/image/photo_to_main.jpg'
 
@@ -22,7 +22,7 @@ export const Main = () => {
 
                 </div>
                 <div className={s.photo}>
-                    <img src={mainPhoto} className={s.photoImg}/>
+                    <img src={mainPhoto} className={s.photoImg} alt='portfolioMainImg'/>
                 </div>
             </div>
         </section>

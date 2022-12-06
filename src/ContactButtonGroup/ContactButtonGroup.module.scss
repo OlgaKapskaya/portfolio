@@ -1,0 +1,18 @@
+$color_1: #c6c9d8;
+$color_2: var(--color-primary);
+
+.iconsContainer {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon {
+    font-size: 2em;
+    color: $color_1;
+    &:hover {
+        color: $color_2;
+        transform: translateY(-5px);
+        transition: 0.5s;
+    }
+}

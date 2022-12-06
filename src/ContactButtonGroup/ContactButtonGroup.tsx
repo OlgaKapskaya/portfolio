@@ -1,5 +1,5 @@
 import React from "react";
-import s from './ContactButtonGroup.module.css'
+import s from './ContactButtonGroup.module.scss'
 
 import {AiFillLinkedin} from "@react-icons/all-files/ai/AiFillLinkedin";
 import {AiOutlineMail} from "@react-icons/all-files/ai/AiOutlineMail";

@@ -1,4 +1,4 @@
-import s from './Project.module.css'
+import s from './Project.module.scss'
 import React, {FC} from "react";
 
 type StyleType = {

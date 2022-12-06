@@ -1,11 +1,11 @@
 import React from "react";
-import s from './Projects.module.css'
-import container from "../common/styles/Container.module.css";
+import s from './Projects.module.scss'
+import container from "../common/styles/Container.module.scss";
 import {Project} from "./Project/Project";
 import {Title} from "../common/components/Title/Title";
 import sn from '../../src/accets/image/SN.jpeg'
 import todo from '../../src/accets/image/todo.jpeg'
-import shop from '../../src/accets/image/shop.jpeg'
+import shop from '../../src/accets/image/shop.webp'
 
 export const Projects = () => {
     const socialStyle = {
