@@ -1,20 +1,17 @@
 @import 'src/accets/style/sass/variables';
 
 @media screen and (max-width: 629px) {
-    .contactContainer {
-        height: max-content;
-    }
     .form {
         width: 100%;
     }
 }
 @media screen and (min-width: 630px) {
-    .contactContainer {
-        height: 100vh;
-    }
     .form {
-        width: 40%;
+        width: 50%;
     }
+}
+.contactContainer {
+    height: max-content;
 }
 .containerFormAndData {
     border-radius: 5px;

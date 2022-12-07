@@ -1,18 +1,17 @@
-import React from "react";
 import s from './Skills.module.scss'
 import container from '../common/styles/Container.module.scss'
 
-import {Skill} from "./Skill/Skill";
-import {Title} from "../common/components/Title/Title";
+import {Skill} from './Skill/Skill';
+import {Title} from '../common/components/Title/Title';
 
-import {FaReact} from "@react-icons/all-files/fa/FaReact";
-import {SiRedux} from "@react-icons/all-files/si/SiRedux";
-import {DiJavascript1} from "@react-icons/all-files/di/DiJavascript1";
-import {DiCss3} from "@react-icons/all-files/di/DiCss3";
-import {AiFillHtml5} from "@react-icons/all-files/ai/AiFillHtml5";
-import {FaGitAlt} from "@react-icons/all-files/fa/FaGitAlt";
-import {VscDebugConsole} from "@react-icons/all-files/vsc/VscDebugConsole";
-import {CgStyle} from "@react-icons/all-files/cg/CgStyle";
+import {FaReact} from '@react-icons/all-files/fa/FaReact';
+import {SiRedux} from '@react-icons/all-files/si/SiRedux';
+import {DiJavascript1} from '@react-icons/all-files/di/DiJavascript1';
+import {DiCss3} from '@react-icons/all-files/di/DiCss3';
+import {AiFillHtml5} from '@react-icons/all-files/ai/AiFillHtml5';
+import {FaGitAlt} from '@react-icons/all-files/fa/FaGitAlt';
+import {VscDebugConsole} from '@react-icons/all-files/vsc/VscDebugConsole';
+import {CgStyle} from '@react-icons/all-files/cg/CgStyle';
 
 type SkillsType = {
     logo: JSX.Element

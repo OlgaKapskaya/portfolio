@@ -1,4 +1,5 @@
 @import 'src/accets/style/sass/variables';
+@import 'src/accets/style/sass/mixins';
 
 .skillContainer {
     background: $color-bg-secondary;
@@ -32,9 +33,7 @@
 }
 .content {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    @include positionBlocks(column, flex-start, flex-start);
     font-family: $font-family;
     color: $color-secondary;
     box-sizing: border-box;
@@ -57,9 +56,7 @@
     color: $color-primary;
 }
 .iconContainer {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    @include positionBlocks(row, flex-start, flex-start);
     margin-right: 30px;
     font-size: 40px;
     color: $color-primary;

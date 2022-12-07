@@ -1,11 +1,10 @@
-import React from "react";
 import s from './Main.module.scss'
 import container from '../common/styles/Container.module.scss'
-import {ContactButtonGroup} from "../ContactButtonGroup/ContactButtonGroup";
 import mainPhoto from '../accets/image/photo_to_main.jpg'
+import {FC} from 'react';
 
 
-export const Main = () => {
+export const Main: FC = () => {
 
     return (
         <section className={s.mainContainer} id={'mainPage'}>
@@ -15,15 +14,8 @@ export const Main = () => {
                     <span>HELLO, MY NAME IS</span>
                     <h1>OLGA KAPSKAYA</h1>
                     <span>FRONT-END DEVELOPER BASED IN #MINSK</span>
-                    <div className={s.buttonGroup}>
-                        <ContactButtonGroup/>
-
-                    </div>
-
                 </div>
-                <div className={s.photo}>
-                    <img src={mainPhoto} className={s.photoImg} alt='portfolioMainImg'/>
-                </div>
+                <img src={mainPhoto} className={s.photo} alt='portfolioMainImg'/>
             </div>
         </section>
     )

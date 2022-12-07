@@ -1,21 +1,31 @@
 @import 'src/accets/style/sass/variables';
-@media screen and (max-width: 966px) {
+@media screen and (max-width: 767px) {
     h1 {
         font-size: $h4;
         line-height: 49px;
     }
-    .photo {
-        height: 400px;
+    .mainContainer {
+        height: max-content;
+    }
+    .about {
+        margin-top: 90px;
     }
 }
-@media screen and (min-width: 967px) {
+@media screen and (min-width: 768px) {
     h1 {
         font-size: $h1;
         line-height: 112px;
     }
+    .mainContainer {
+        height: 100vh;
+    }
+
 }
-.mainContainer {
-    min-height: 100vh;
+.photo {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    padding: 20px;
 }
 .about {
     display: flex;
@@ -23,19 +33,7 @@
     font-size: 16px;
     width: 500px;
 }
-.photo {
-    width: 350px;
-    height: 500px;
-    margin: 10px;
-}
-.photoImg {
-    width: 350px;
-    height: 500px;
-    object-fit: cover;
-}
-.buttonGroup {
-    margin-top: 15px;
-}
+
 h1 {
     margin: 0;
     text-transform: uppercase;

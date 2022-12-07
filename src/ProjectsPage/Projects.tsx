@@ -1,23 +1,23 @@
-import React from "react";
+import {FC} from 'react';
 import s from './Projects.module.scss'
-import container from "../common/styles/Container.module.scss";
-import {Project} from "./Project/Project";
-import {Title} from "../common/components/Title/Title";
+import container from '../common/styles/Container.module.scss';
+import {Project} from './Project/Project';
+import {Title} from '../common/components/Title/Title';
 import sn from '../../src/accets/image/SN.jpeg'
 import todo from '../../src/accets/image/todo.jpeg'
 import shop from '../../src/accets/image/shop.webp'
 
-export const Projects = () => {
+export const Projects:FC = () => {
     const socialStyle = {
-        backgroundImage: 'url(' + sn + ')',
+        backgroundImage: `url(${sn})`,
         backgroundSize: 'cover',
     }
     const todoStyle = {
-        backgroundImage: 'url(' + todo + ')',
+        backgroundImage: `url(${todo})`,
         backgroundSize: 'cover',
     }
     const onlineShopStyle = {
-        backgroundImage: 'url(' + shop + ')',
+        backgroundImage: `url(${shop})`,
         backgroundSize: 'cover',
     }
 

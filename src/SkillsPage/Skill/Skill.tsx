@@ -1,5 +1,5 @@
-import s from "./Skill.module.scss";
-import React, {FC} from "react";
+import s from './Skill.module.scss';
+import {FC, memo} from 'react';
 
 type SkillProps = {
     logo: JSX.Element
@@ -7,7 +7,7 @@ type SkillProps = {
     description: string
 }
 
-export const Skill: FC<SkillProps> = ({logo, title, description}) => {
+export const Skill: FC<SkillProps> = memo(({logo, title, description}) => {
     return (
         <div className={s.skillContainer}>
             <div className={s.service}>
@@ -22,4 +22,4 @@ export const Skill: FC<SkillProps> = ({logo, title, description}) => {
 
         </div>
     )
-}
+})

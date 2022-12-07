@@ -7,9 +7,9 @@
   line-height: $lineHeight;
   word-break: break-word;
 }
-@mixin positionBlocks($flexDirection, $justifyContent){
+@mixin positionBlocks($flexDirection, $justifyContent, $alignItems){
   display: flex;
   flex-direction: $flexDirection;
-  align-items: center;
+  align-items: $alignItems;
   justify-content: $justifyContent;
 }

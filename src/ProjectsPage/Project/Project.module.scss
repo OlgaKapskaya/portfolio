@@ -39,9 +39,8 @@
     background-position: center;
     overflow: hidden;
     border-radius: 5px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    @include positionBlocks(row, center, flex-end);
+
     &:hover {
         background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 32%, $color-primary 100%);
         background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 32%, $color-primary 100%);
@@ -51,7 +50,7 @@
     }
 }
 .content {
-    @include positionBlocks(column, center);
+    @include positionBlocks(column, center, center);
     margin: 10px 10px 30px 10px;
 }
 .linkDemo {

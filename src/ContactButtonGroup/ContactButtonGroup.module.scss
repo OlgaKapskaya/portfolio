@@ -3,13 +3,13 @@
 
 .iconsContainer {
     width: 200px;
-    @include positionBlocks(row, space-between);
-    //display: flex;
-    //align-items: center;
-    //justify-content: space-between;
+    padding: 30px;
+    @include positionBlocks(row, space-between, center);
+
 }
+
 .icon {
-    font-size: 2em;
+    font-size: 20px;
     color: $color-secondary;
     &:hover {
         color: $color-primary;

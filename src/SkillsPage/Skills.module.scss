@@ -7,10 +7,10 @@
 }
 .skillsContainer {
     background-color: $color-bg-primary;
-    min-height: 100vh;
+    height: max-content;
 }
 .skillBlock {
-    @include positionBlocks(column, flex-start);
+    @include positionBlocks(column, flex-start, center);
     flex-wrap: nowrap;
 }
 .skills {

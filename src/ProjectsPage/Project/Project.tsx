@@ -1,5 +1,5 @@
 import s from './Project.module.scss'
-import React, {FC} from "react";
+import {FC, memo} from 'react';
 
 type StyleType = {
     backgroundImage: string
@@ -13,7 +13,7 @@ type ProjectProps = {
     link?: string
 }
 
-export const Project: FC<ProjectProps> = ({title, description, link, style}) => {
+export const Project: FC<ProjectProps> = memo(({title, description, link, style}) => {
     return (
         <div className={s.projectContainer}>
             <div className={s.portfolioProject} style={style}>
@@ -32,4 +32,4 @@ export const Project: FC<ProjectProps> = ({title, description, link, style}) => 
             </div>
         </div>
     )
-}
+})
