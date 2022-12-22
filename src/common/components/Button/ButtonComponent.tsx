@@ -1,12 +1,19 @@
-import {FC} from 'react';
+import {FC, memo} from 'react';
 import s from './ButtonComponent.module.scss'
 
 type ButtonComponentProps = {
     title: string
-    onClick: () => void
+    onClick?: () => void
+    type?: 'button' | 'submit' | 'reset' | undefined
+    disabled?: boolean
 }
-export const ButtonComponent:FC<ButtonComponentProps> = ({title, onClick}) => {
+export const ButtonComponent: FC<ButtonComponentProps> = memo(({
+                                                              title,
+                                                              onClick,
+                                                              type,
+                                                              disabled
+                                                          }) => {
     return (
-        <button className={s.button}> {title} </button>
+        <button className={s.button} type={type} disabled={disabled}> {title} </button>
     )
-}
+})

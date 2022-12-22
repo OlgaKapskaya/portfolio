@@ -1,13 +1,13 @@
 import {useCallback, useState} from 'react';
 import './App.css';
-import {Header} from './features/Header/Header';
-import {Main} from './features/MainPage/Main';
-import {Skills} from './features/SkillsPage/Skills';
-import {Projects} from './features/ProjectsPage/Projects';
-import {Contact} from './features/ContactPage/Contact';
+import {Header} from '../features/Header/Header';
+import {Main} from '../features/MainPage/Main';
+import {Skills} from '../features/SkillsPage/Skills';
+import {Projects} from '../features/ProjectsPage/Projects';
+import {Contact} from '../features/ContactPage/Contact';
 import {Navigate, Route, Routes} from 'react-router-dom';
-import {Sidebar} from './features/Sidebar/Sidebar';
-import {PATH} from "./common/constants/constants";
+import {Sidebar} from '../features/Sidebar/Sidebar';
+import {PATH} from "../common/constants/constants";
 
 function App() {
     const [open, setOpen] = useState(false)
