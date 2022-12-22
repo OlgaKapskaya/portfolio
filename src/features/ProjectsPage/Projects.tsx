@@ -1,11 +1,11 @@
 import {FC} from 'react';
 import s from './Projects.module.scss'
-import container from '../common/styles/Container.module.scss';
+import container from '../../common/styles/Container.module.scss';
 import {Project} from './Project/Project';
-import {Title} from '../common/components/Title/Title';
-import sn from '../../src/accets/image/SN.jpeg'
-import todo from '../../src/accets/image/todo.jpeg'
-import shop from '../../src/accets/image/shop.webp'
+import {Title} from '../../common/components/Title/Title';
+import sn from '../../accets/image/SN.jpeg'
+import todo from '../../accets/image/todo.jpeg'
+import shop from '../../accets/image/shop.webp'
 
 export const Projects:FC = () => {
     const socialStyle = {

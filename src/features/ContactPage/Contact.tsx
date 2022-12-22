@@ -1,8 +1,8 @@
 import s from './Contact.module.scss'
-import container from '../common/styles/Container.module.scss';
+import container from '../../common/styles/Container.module.scss';
 import {FC} from 'react';
-import {ButtonComponent} from '../common/components/Button/ButtonComponent';
-import {Title} from '../common/components/Title/Title';
+import {ButtonComponent} from '../../common/components/Button/ButtonComponent';
+import {Title} from '../../common/components/Title/Title';
 
 export const Contact: FC = () => {
     return (

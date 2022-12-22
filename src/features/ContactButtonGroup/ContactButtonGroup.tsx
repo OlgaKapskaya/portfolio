@@ -6,26 +6,32 @@ import {AiOutlineMail} from "@react-icons/all-files/ai/AiOutlineMail";
 import {AiFillGithub} from "@react-icons/all-files/ai/AiFillGithub";
 import {FaTelegramPlane} from "@react-icons/all-files/fa/FaTelegramPlane";
 import {NavLink} from "react-router-dom";
+import {LINKS, PATH} from "../../common/constants/constants";
+import {SiCodewars} from "@react-icons/all-files/si/SiCodewars";
 
 
 export const ContactButtonGroup = () => {
     return (
         <div className={s.iconsContainer}>
 
-            <a href='https://www.linkedin.com/in/olga-kapskaya-87991b250/' target='_blank' rel='noreferrer'>
+            <a href={LINKS.LINKED_IN} target='_blank' rel='noreferrer'>
                 <AiFillLinkedin className={s.icon}/>
             </a>
-            <NavLink to='/contact'>
+
+            <NavLink to={PATH.CONTACT}>
                 <AiOutlineMail className={s.icon}/>
             </NavLink>
 
 
-            <a href='https://github.com/OlgaKapskaya' target='_blank' rel='noreferrer'>
+            <a href={LINKS.GITHUB} target='_blank' rel='noreferrer'>
                 <AiFillGithub className={s.icon}/>
             </a>
 
-            <a href='https://t.me/OlgaKapskaya' target='_blank' rel='noreferrer'>
+            <a href={LINKS.TELEGRAM} target='_blank' rel='noreferrer'>
                 <FaTelegramPlane className={s.icon}/>
+            </a>
+            <a href={LINKS.CODEWARS} target='_blank' rel='noreferrer'>
+                <SiCodewars className={s.icon}/>
             </a>
 
         </div>

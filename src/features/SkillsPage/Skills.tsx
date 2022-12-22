@@ -1,8 +1,8 @@
 import s from './Skills.module.scss'
-import container from '../common/styles/Container.module.scss'
+import container from '../../common/styles/Container.module.scss'
 
 import {Skill} from './Skill/Skill';
-import {Title} from '../common/components/Title/Title';
+import {Title} from '../../common/components/Title/Title';
 
 import {FaReact} from '@react-icons/all-files/fa/FaReact';
 import {SiRedux} from '@react-icons/all-files/si/SiRedux';
