@@ -1,8 +1,8 @@
 import {useState} from "react";
 import {useFormik} from "formik";
-import {validationSchema} from '../../../common/utils/formValidators';
+import {validationSchema} from '../../../../common/utils/formValidators';
 import emailjs from '@emailjs/browser';
-import {EMAIL_SERVICE} from '../../../common/constants/constants';
+import {EMAIL_SERVICE} from '../../../../common/constants/constants';
 
 export interface Values {
     name: string;

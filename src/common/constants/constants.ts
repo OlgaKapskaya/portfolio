@@ -7,7 +7,9 @@ export const PATH = {
 
 export const ABOUT = {
     NAME: 'OLGA KAPSKAYA',
-    POSITION: 'FRONT-END DEVELOPER BASED IN #MINSK'
+    POSITION: 'FRONT-END DEVELOPER BASED IN #MINSK',
+    PHONE: '+375 (29) 592 16 01',
+    EMAIL: 'olikbuko@gmail.com'
 }
 
 export const LINKS = {
