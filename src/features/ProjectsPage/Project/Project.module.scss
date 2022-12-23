@@ -82,6 +82,11 @@
     @include textStyle(14px, 1.7);
 }
 .buttonLink {
+    display: flex;
+    justify-content: space-between;
     margin-top: 35px;
     transition: 0.7s;
+    & a{
+        margin-left: 10px;
+    }
 }

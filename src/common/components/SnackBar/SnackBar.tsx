@@ -20,7 +20,7 @@ export const SnackBar: FC<SnackBarPropsType> = memo(({type, message, show}) => {
 
     return (
             <Snackbar open={open} autoHideDuration={5000} onClose={handleClose}>
-                <Alert onClose={handleClose} severity={type} >
+                <Alert onClose={handleClose} severity={type} variant='filled'>
                     {message}
                 </Alert>
             </Snackbar>

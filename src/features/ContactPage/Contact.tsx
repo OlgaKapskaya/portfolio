@@ -1,49 +1,17 @@
 import s from './Contact.module.scss'
 import container from '../../common/styles/Container.module.scss';
-import {FC, useRef, useState} from 'react';
+import {FC} from 'react';
 import {ButtonComponent} from '../../common/components/Button/ButtonComponent';
 import {Title} from '../../common/components/Title/Title';
-import emailjs from '@emailjs/browser';
-import {useFormik} from 'formik';
-import {SnackBar} from "../../common/components/SnackBar/SnackBar";
+import {SnackBar} from '../../common/components/SnackBar/SnackBar';
+import {Input} from '../../common/components/Input/Input';
+import {useContactForm} from './hooks/useContactForm';
 
-interface Values {
-    name: string;
-    email: string;
-    message: string;
-}
+
 
 export const Contact: FC = () => {
-    const [snackbarMessage, setSnackbarMessage] = useState<string>('')
-    const [snackbarShow, setSnackbarShow] = useState<boolean>(false)
-    const [snackbarType, setSnackbarType] = useState<'success' | 'error'>('success')
-    const [onDisabled, setOnDisabled] = useState<boolean>(false)
 
-    const form = useRef<HTMLFormElement>(null);
-    const formik = useFormik<Values>({
-        initialValues: {
-            name: '',
-            email: '',
-            message: ''
-        },
-        // validationSchema: validationSchema,
-        onSubmit: (values) => {
-            setOnDisabled(true)
-            emailjs.sendForm('service_yj79zmk' , 'template_wecj886', form.current ? form.current : '',  'Q5B3qmXHQDaJp8P6G')
-                .then((res) => {
-                    setSnackbarMessage('Message send')
-                    setSnackbarType('success')
-                })
-                .catch((e) => {
-                    setSnackbarMessage('Something went wrong')
-                    setSnackbarType('error')
-                })
-                .finally(() => {
-                    setSnackbarShow(true)
-                    setOnDisabled(false)
-                })
-        },
-    });
+    const {formik, onDisabled, snackbarShow, snackbarType, snackbarMessage} = useContactForm()
 
     return (
         <section className={s.contactContainer} id='contactPage'>
@@ -51,29 +19,35 @@ export const Contact: FC = () => {
                 <Title title='contact'
                        description='I am available for freelance work. Connect with me via phone: +375 (29) 592 16 01 or email: olikbuko@gmail.com'/>
 
-                <form ref={form} className={s.form} onSubmit={formik.handleSubmit}>
-                    <input className={s.input}
+                <form  className={s.form} onSubmit={formik.handleSubmit}>
+                    <Input label={formik.touched.name && formik.errors.name}
                            placeholder='Your name'
                            type='text'
                            id='name'
                            name='name'
+                           component='input'
                            value={formik.values.name}
                            onChange={formik.handleChange}
+                           className={s.input}
                     />
-                    <input className={s.input}
+                    <Input label={formik.touched.email && formik.errors.email}
                            placeholder='Your email'
                            type='text'
                            id='email'
                            name='email'
+                           component='input'
                            value={formik.values.email}
                            onChange={formik.handleChange}
+                           className={s.input}
                     />
-                    <textarea className={s.input}
-                              placeholder='Your message'
-                              id='message'
-                              name='message'
-                              value={formik.values.message}
-                              onChange={formik.handleChange}
+                    <Input label={formik.touched.message && formik.errors.message}
+                           placeholder='Your message'
+                           id='message'
+                           name='message'
+                           component='textarea'
+                           value={formik.values.message}
+                           onChange={formik.handleChange}
+                           className={s.input}
                     />
                     <ButtonComponent title='send message' type='submit' disabled={onDisabled}/>
                 </form>

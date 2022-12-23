@@ -10,10 +10,11 @@ type ProjectProps = {
     style: StyleType
     title: string
     description?: string
-    link?: string
+    demoLink: string
+    codeLink: string
 }
 
-export const Project: FC<ProjectProps> = memo(({title, description, link, style}) => {
+export const Project: FC<ProjectProps> = memo(({title, description, demoLink, style, codeLink}) => {
     return (
         <div className={s.projectContainer}>
             <div className={s.portfolioProject} style={style}>
@@ -23,7 +24,8 @@ export const Project: FC<ProjectProps> = memo(({title, description, link, style}
                         <h4 className={s.projectTitle}> {title} </h4>
 
                         <div className={s.buttonLink}>
-                            <a href={link} className={s.linkDemo} target='_blank' rel='noreferrer'> SHOW DEMO </a>
+                            <a href={demoLink} className={s.linkDemo} target='_blank' rel='noreferrer'> DEMO </a>
+                            <a href={codeLink} className={s.linkDemo} target='_blank' rel='noreferrer'> CODE </a>
                         </div>
 
                     </div>

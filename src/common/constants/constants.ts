@@ -16,8 +16,19 @@ export const LINKS = {
     TELEGRAM: 'https://t.me/OlgaKapskaya',
     CODEWARS: 'https://www.codewars.com/users/OlgaKapskaya',
     PROJECT_LINKS: {
-        SOCIAL_NETWORK: 'https://olgakapskaya.github.io/Samurai-way/',
-        TODO: '',
-        SHOP: 'https://olgakapskaya.github.io/online_store/#/catalog'
+        SOCIAL_NETWORK_DEMO: 'https://olgakapskaya.github.io/Samurai-way/',
+        SOCIAL_NETWORK_CODE: 'https://github.com/OlgaKapskaya/Samurai-way',
+        TODO_DEMO: 'https://olgakapskaya.github.io/todolist-myversion/',
+        TODO_CODE: 'https://github.com/OlgaKapskaya/todolist-myversion',
+        SHOP_DEMO: 'https://olgakapskaya.github.io/online_store/#/catalog',
+        SHOP_CODE: 'https://github.com/OlgaKapskaya/online_store'
     }
 }
+
+export const EMAIL_SERVICE = {
+    serviceID: 'service_yj79zmk',
+    templateID: 'template_wecj886',
+    publicKey: 'Q5B3qmXHQDaJp8P6G'
+}
+
+
