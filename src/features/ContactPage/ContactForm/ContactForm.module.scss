@@ -51,11 +51,11 @@
     outline: 0;
   }
 }
-//input {
-//    &:-internal-autofill-selected {
-//        appearance: none;
-//        background-color: transparent !important;
-//        color: $color-secondary !important;
-//        background-image: none !important;
-//    }
-//}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,{
+  border: 2px solid $color-primary;
+  -webkit-text-fill-color: $color-secondary;
+  transition: background-color 5000s ease-in-out 0s;
+}

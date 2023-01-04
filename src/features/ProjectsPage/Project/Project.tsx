@@ -1,5 +1,5 @@
 import s from './Project.module.scss'
-import {FC, memo} from 'react';
+import {FC, memo, useState} from 'react';
 
 type StyleType = {
     backgroundImage: string
@@ -15,19 +15,27 @@ type ProjectProps = {
 }
 
 export const Project: FC<ProjectProps> = memo(({title, description, demoLink, style, codeLink}) => {
+    const [isVisible, setIsVisible] = useState<boolean>(false)
+    const onMouseEnterHandler = () => {
+        setIsVisible(true)
+    }
+    const onMouseLeaveHandler = () => {
+        setIsVisible(false)
+    }
     return (
-        <div className={s.projectContainer}>
+        <div className={s.projectContainer}
+             onMouseEnter={onMouseEnterHandler}
+             onMouseLeave={onMouseLeaveHandler}>
             <div className={s.portfolioProject} style={style}>
-                <div className={s.projectPreview} >
+                <div className={s.projectPreview}>
                     <div className={s.content}>
-                        <p className={s.projectDescription}> {description} </p>
                         <h4 className={s.projectTitle}> {title} </h4>
-
+                        {isVisible &&
+                            <p className={s.projectDescription}> {description} </p>}
                         <div className={s.buttonLink}>
                             <a href={demoLink} className={s.linkDemo} target='_blank' rel='noreferrer'> DEMO </a>
                             <a href={codeLink} className={s.linkDemo} target='_blank' rel='noreferrer'> CODE </a>
                         </div>
-
                     </div>
                 </div>
 

@@ -2,28 +2,34 @@
 @import '../../accets/style/sass/mixins';
 
 @media screen and (min-width: 768px) {
-.mobileNavigation{
+  .mobileNavigation {
     display: none;
+  }
 }
-}
+
 @media screen and (max-width: 768px) {
   .desktopNavigation {
     display: none;
   }
 }
+
 .header {
-    position: fixed;
-    height: 68px;
-    width: 100%;
-    background: $color-bg-secondary;
-    @include positionBlocks(row, space-between, center);
-    box-sizing: border-box;
-    margin: 0;
-    .burger{
-        font-size: 30px;
-        margin-left: 15px;
-        cursor: pointer;
-    } &:hover {
-         color: $color-primary;
-     }
+  position: fixed;
+  height: 68px;
+  width: 100%;
+  background: $color-bg-secondary;
+  @include positionBlocks(row, space-between, center);
+  box-sizing: border-box;
+  margin: 0;
+  z-index: 100;
+
+  .burger {
+    font-size: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+  &:hover {
+    color: $color-primary;
+  }
 }

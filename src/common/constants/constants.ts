@@ -23,7 +23,10 @@ export const LINKS = {
         TODO_DEMO: 'https://olgakapskaya.github.io/todolist-myversion/',
         TODO_CODE: 'https://github.com/OlgaKapskaya/todolist-myversion',
         SHOP_DEMO: 'https://olgakapskaya.github.io/online_store/#/catalog',
-        SHOP_CODE: 'https://github.com/OlgaKapskaya/online_store'
+        SHOP_CODE: 'https://github.com/OlgaKapskaya/online_store',
+        QUESTIONS_DEMO: 'https://olgakapskaya.github.io/questions_app',
+        QUESTIONS_CODE: 'https://github.com/OlgaKapskaya/questions_app',
+
     }
 }
 

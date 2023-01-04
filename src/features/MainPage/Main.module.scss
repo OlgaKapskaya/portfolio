@@ -1,64 +1,68 @@
 @import '../../accets/style/sass/variables';
 
-@media screen and (max-width: 945px) {
-  .mainContainer {
+.mainContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  flex-direction: row;
+  justify-content: center;
+
+  @media screen and (max-width: 945px) {
     height: 100vh;
     justify-content: space-evenly;
     flex-direction: column;
     padding-top: 80px;
   }
-  .about {
-    width: max-content;
-  }
-  h1 {
-    font-size: $h3;
-    line-height: 49px;
+
+  .particles {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+    z-index: 0;
   }
   .photo {
-    width: 350px;
-    height: 500px;
+    width: 50vh;
+    height: 70vh;
     object-fit: cover;
-  }
-}
-
-@media screen and (min-width: 946px) {
-  .mainContainer {
-    height: 100vh;
-    flex-direction: row;
-    justify-content: center;
-  }
-  h1 {
-    font-size: $h1;
-    line-height: 112px;
+    z-index: 1;
+    @media screen and (max-width: 945px){
+      width: 100%;
+    }
   }
   .about {
-    width: 500px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    width: 70vh;
+    @media screen and (max-width: 945px){
+      width: max-content;
+    }
+
+    h1 {
+      margin: 0;
+      text-transform: uppercase;
+      background-image: linear-gradient(145deg, #f81f01, #ee076e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+
+      font-size: $h1;
+      line-height: 112px;
+
+      @media screen and (max-width: 945px){
+        font-size: $h3;
+        line-height: 49px;
+      }
+    }
   }
-  .photo {
-    width: 350px;
-    height: 500px;
-    object-fit: cover;
-  }
 }
 
-.mainContainer {
-  width: 100%;
-  display: flex;
-  align-items: center;
 
-}
 
-.about {
-  display: flex;
-  flex-direction: column;
-  font-size: 16px;
-}
 
-h1 {
-  margin: 0;
-  text-transform: uppercase;
-  background-image: linear-gradient(145deg, #f81f01, #ee076e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-}
+
+
