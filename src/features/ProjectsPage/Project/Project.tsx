@@ -30,6 +30,7 @@ export const Project: FC<ProjectProps> = memo(({title, description, demoLink, st
                 <div className={s.projectPreview}>
                     <div className={s.content}>
                         <h4 className={s.projectTitle}> {title} </h4>
+                        {/*<ButtonComponent title={title}/>*/}
                         {isVisible &&
                             <p className={s.projectDescription}> {description} </p>}
                         <div className={s.buttonLink}>

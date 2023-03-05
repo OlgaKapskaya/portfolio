@@ -26,6 +26,10 @@ export const LINKS = {
         SHOP_CODE: 'https://github.com/OlgaKapskaya/online_store',
         QUESTIONS_DEMO: 'https://olgakapskaya.github.io/questions_app',
         QUESTIONS_CODE: 'https://github.com/OlgaKapskaya/questions_app',
+        CARDS_DEMO: 'https://olgakapskaya.github.io/cards/',
+        CARDS_CODE: 'https://github.com/OlgaKapskaya/cards',
+        WEATHER_DEMO: 'https://olgakapskaya.github.io/weather-app/',
+        WEATHER_CODE: 'https://github.com/OlgaKapskaya/weather-app',
 
     }
 }

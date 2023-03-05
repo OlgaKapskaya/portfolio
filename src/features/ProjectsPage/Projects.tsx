@@ -7,6 +7,7 @@ import sn from '../../accets/image/SN.jpeg'
 import todo from '../../accets/image/todo.jpeg'
 import shop from '../../accets/image/shop.webp'
 import questions from '../../accets/image/question_1.jpeg'
+import weather from '../../accets/image/weather.jpeg'
 import {createProjectStyle} from '../../common/utils/utils';
 import {LINKS} from '../../common/constants/constants';
 
@@ -15,9 +16,17 @@ export const Projects: FC = () => {
     const socialStyle = createProjectStyle(sn)
     const todoStyle = createProjectStyle(todo)
     const onlineShopStyle = createProjectStyle(shop)
-    const questionsStyle = createProjectStyle(questions)
+    const cardsStyle = createProjectStyle(questions)
+    const weatherStyle = createProjectStyle(weather)
 
     const projects = [
+        {
+            title: 'Cards',
+            demoLink: LINKS.PROJECT_LINKS.CARDS_DEMO,
+            style: cardsStyle,
+            codeLink: LINKS.PROJECT_LINKS.CARDS_CODE,
+            description: 'Technology stack: react, redux-toolkit, react-redux, redux-thunk, react-router-dom, typescript, dayJS, MUI'
+        },
         {
             title: 'Social network',
             demoLink: LINKS.PROJECT_LINKS.SOCIAL_NETWORK_DEMO,
@@ -40,11 +49,11 @@ export const Projects: FC = () => {
             description: 'Technology stack: react, redux, react-redux, redux-thunk, formik, yup, typescript, react-router-dom, axios, material UI'
         },
         {
-            title: 'Questions app',
-            demoLink: LINKS.PROJECT_LINKS.QUESTIONS_DEMO,
-            style: questionsStyle,
-            codeLink: LINKS.PROJECT_LINKS.QUESTIONS_CODE,
-            description: 'Technology stack: react, redux-toolkit, react-redux, typescript, lodash, react-modal, styled-components'
+            title: 'Weather',
+            demoLink: LINKS.PROJECT_LINKS.WEATHER_DEMO,
+            style: weatherStyle,
+            codeLink: LINKS.PROJECT_LINKS.WEATHER_CODE,
+            description: 'Technology stack: react, redux-toolkit, react-redux, typescript, axios, react-router-dom, chakra UI, react icons, react-toastify'
         }
     ]
     return (
