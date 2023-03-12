@@ -57,7 +57,7 @@ export const Skills = () => {
             title: 'Testing and Debugging',
             description: 'TDD, Story book, Unit tests, Snapshot'
         },
-        {logo: <CgStyle/>, title: 'Styling', description: 'Material UI, React Bootstrap'}
+        {logo: <CgStyle/>, title: 'Styling', description: 'Material UI, Chakra UI, React Bootstrap'}
 
     ]
     return (
